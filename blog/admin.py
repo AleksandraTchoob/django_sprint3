@@ -18,7 +18,7 @@ class LocationAdmin(admin.ModelAdmin):
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'pub_date', 'author', 
+    list_display = ('title', 'pub_date', 'author',
                     'category', 'location', 'is_published')
     list_filter = ('category', 'is_published', 'pub_date')
     search_fields = ('title', 'text')
